@@ -8,6 +8,10 @@ class Small extends StatefulWidget {
 class _SmallState extends State<Small> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return MaterialApp(
+      home: SafeArea(child: Scaffold(
+        
+      )),
+    )
   }
 }
