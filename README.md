@@ -1,5 +1,11 @@
 # Hotel Booking App
 
+## Course
+
+This project is part of **The Complete Flutter Course: Build Android, iOS, and Web apps**.
+
+[View the course on Coding Liquids](https://www.codingliquids.com/courses/Flutter-Course-Learn-to-Build-Android-iOS-and-Web-apps-637b978ee4b08f9aaa22d2cb)
+
 [![Flutter CI](https://github.com/sagnik150699/hotel_booking_application_flutter/actions/workflows/flutter-ci.yml/badge.svg?branch=main)](https://github.com/sagnik150699/hotel_booking_application_flutter/actions/workflows/flutter-ci.yml)
 
 **Hotel Booking App** is a responsive Flutter sample application for searching, comparing, and presenting hotel stays across mobile, tablet, desktop, and web layouts.
