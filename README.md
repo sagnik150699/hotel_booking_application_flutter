@@ -22,33 +22,54 @@ on Coding Liquids and is maintained by **Sagnik Bhattacharya**
 
 ## Screenshots
 
-Captured from the release web build in headless Chromium at phone, tablet and
-desktop viewport sizes (the same responsive layouts the Android and iOS apps
-render). See [Regenerating images](#regenerating-images-and-screenshots).
+Captured by `tool/capture_screenshots.cjs` from the release web build in
+headless Chromium at phone, tablet and desktop viewport sizes; the Android and
+iOS apps render the same responsive layouts. See
+[Regenerating images and screenshots](#regenerating-images-and-screenshots).
 
 ### Phone layout (Android and iOS)
 
-| Explore | Hotel details | Checkout |
+| Explore | Live search results | Date range picker |
 | :-: | :-: | :-: |
-| ![Explore on a phone](docs/screenshots/phone-explore.png) | ![Hotel details on a phone](docs/screenshots/phone-details.png) | ![Checkout on a phone](docs/screenshots/phone-booking.png) |
+| ![Explore](docs/screenshots/phone-01-explore.png) | ![Search results for Goa](docs/screenshots/phone-02-search-results.png) | ![Date range picker](docs/screenshots/phone-03-date-picker.png) |
 
-| Confirmation | Trips | Dark mode |
+| Filters applied | Hotel details | Stay planner and price |
 | :-: | :-: | :-: |
-| ![Booking confirmation on a phone](docs/screenshots/phone-confirmation.png) | ![Trips on a phone](docs/screenshots/phone-trips.png) | ![Explore in dark mode on a phone](docs/screenshots/phone-explore-dark.png) |
+| ![Filters applied](docs/screenshots/phone-04-filters.png) | ![Hotel details](docs/screenshots/phone-05-details.png) | ![Stay planner with price breakdown](docs/screenshots/phone-06-details-planner.png) |
+
+| Checkout validation | Checkout | Confirmation |
+| :-: | :-: | :-: |
+| ![Checkout with validation errors](docs/screenshots/phone-07-checkout-validation.png) | ![Checkout filled in](docs/screenshots/phone-08-checkout.png) | ![Booking confirmation](docs/screenshots/phone-09-confirmation.png) |
+
+| Trips | Saved stays | Dark mode |
+| :-: | :-: | :-: |
+| ![Trips](docs/screenshots/phone-10-trips.png) | ![Saved stays](docs/screenshots/phone-11-saved.png) | ![Explore in dark mode](docs/screenshots/phone-12-explore-dark.png) |
+
+| Dark mode details | | |
+| :-: | :-: | :-: |
+| ![Hotel details in dark mode](docs/screenshots/phone-13-details-dark.png) | | |
 
 ### Tablet layout
 
-![Explore on a tablet with a navigation rail](docs/screenshots/tablet-explore.png)
+| Explore with a navigation rail | Hotel details |
+| :-: | :-: |
+| ![Explore on a tablet](docs/screenshots/tablet-01-explore.png) | ![Hotel details on a tablet](docs/screenshots/tablet-02-details.png) |
 
 ### Desktop and web layout
 
 | Explore | Hotel details |
 | :-: | :-: |
-| ![Explore on desktop](docs/screenshots/desktop-explore.png) | ![Hotel details on desktop](docs/screenshots/desktop-details.png) |
+| ![Explore on desktop](docs/screenshots/desktop-01-explore.png) | ![Hotel details on desktop](docs/screenshots/desktop-02-details.png) |
 
-| Checkout | Dark mode |
+| Checkout | Confirmation |
 | :-: | :-: |
-| ![Checkout on desktop](docs/screenshots/desktop-booking.png) | ![Explore in dark mode on desktop](docs/screenshots/desktop-explore-dark.png) |
+| ![Checkout on desktop](docs/screenshots/desktop-03-checkout.png) | ![Confirmation on desktop](docs/screenshots/desktop-04-confirmation.png) |
+
+| Trips | Saved stays |
+| :-: | :-: |
+| ![Trips on desktop](docs/screenshots/desktop-05-trips.png) | ![Saved stays on desktop](docs/screenshots/desktop-06-saved.png) |
+
+![Explore in dark mode on desktop](docs/screenshots/desktop-07-explore-dark.png)
 
 ## Features
 

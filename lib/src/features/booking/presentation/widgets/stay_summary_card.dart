@@ -56,7 +56,7 @@ class StaySummaryCard extends StatelessWidget {
                   _Detail(
                     icon: Icons.calendar_month_outlined,
                     text:
-                        '${formatLongDate(stay.checkIn)} → ${formatLongDate(stay.checkOut)}',
+                        '${formatLongDate(stay.checkIn)} – ${formatLongDate(stay.checkOut)}',
                   ),
                   const SizedBox(height: AppSpacing.xs),
                   _Detail(

@@ -80,7 +80,7 @@ void main() {
     await goToCheckout(tester, 'The Park Residency');
 
     expect(find.text('Confirm your stay'), findsOneWidget);
-    expect(find.text('Sat, 3 Oct 2026 → Mon, 5 Oct 2026'), findsOneWidget);
+    expect(find.text('Sat, 3 Oct 2026 – Mon, 5 Oct 2026'), findsOneWidget);
 
     await fillGuestForm(tester);
     await tester.tap(find.byKey(const Key('houseRulesCheckbox')));
