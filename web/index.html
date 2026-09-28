@@ -1,25 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <!--
     If you are serving your web app in a path other than the root, change the
-    href value below to reflect the base path you are serving from.
-
-    The path provided below has to start and end with a slash "/" in order for
-    it to work correctly.
-
-    Fore more details:
-    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+    href value below to reflect the base path you are serving from, or pass
+    `--base-href` to `flutter build web`.
   -->
-  <base href="/">
+  <base href="$FLUTTER_BASE_HREF">
 
   <meta charset="UTF-8">
-  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="description" content="Search and compare hotel stays.">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="Search, compare and book hotel stays across India. A responsive Flutter app for Android, iOS and web.">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#0E6B5C">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+
+  <!--
+    Content Security Policy. Flutter's web engine needs:
+      * 'wasm-unsafe-eval' to instantiate the CanvasKit/Skwasm renderer,
+      * 'unsafe-inline' styles because the engine injects style elements,
+      * gstatic.com when CanvasKit is loaded from Google's CDN (build with
+        `--no-web-resources-cdn` to serve it locally) and for fallback fonts.
+    Everything else, including scripts, is limited to this origin.
+  -->
+  <meta http-equiv="Content-Security-Policy" content="
+    default-src 'self';
+    script-src 'self' 'wasm-unsafe-eval' https://www.gstatic.com;
+    style-src 'self' 'unsafe-inline';
+    img-src 'self' data: blob:;
+    font-src 'self' data: https://fonts.gstatic.com;
+    connect-src 'self' https://www.gstatic.com https://fonts.gstatic.com;
+    worker-src 'self' blob:;
+    manifest-src 'self';
+    object-src 'none';
+    base-uri 'self';
+    form-action 'self';
+  ">
 
   <!-- iOS meta tags & icons -->
+  <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="apple-mobile-web-app-title" content="Hotel Booking">
   <link rel="apple-touch-icon" href="icons/Icon-192.png">
 
@@ -28,18 +49,25 @@
 
   <title>Hotel Booking</title>
   <link rel="manifest" href="manifest.json">
+
+  <style>
+    /* Branded splash shown until Flutter paints; the app covers it afterwards. */
+    html, body { margin: 0; height: 100%; background: #0E6B5C; }
+    #splash {
+      position: fixed; inset: 0; display: flex; flex-direction: column;
+      align-items: center; justify-content: center; gap: 20px;
+      color: #fff; font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+    #splash img { width: 96px; height: 96px; border-radius: 22px; box-shadow: 0 18px 40px rgba(0,0,0,.28); }
+    #splash p { margin: 0; font-size: 18px; font-weight: 600; letter-spacing: .2px; opacity: .95; }
+    flutter-view { position: relative; z-index: 1; }
+  </style>
 </head>
 <body>
-  <!-- This script installs service_worker.js to provide PWA functionality to
-       application. For more information, see:
-       https://developers.google.com/web/fundamentals/primers/service-workers -->
-  <script>
-    if ('serviceWorker' in navigator) {
-      window.addEventListener('flutter-first-frame', function () {
-        navigator.serviceWorker.register('flutter_service_worker.js');
-      });
-    }
-  </script>
-  <script src="main.dart.js" type="application/javascript"></script>
+  <div id="splash" aria-hidden="true">
+    <img src="icons/Icon-192.png" alt="">
+    <p>Hotel Booking</p>
+  </div>
+  <script src="flutter_bootstrap.js" async></script>
 </body>
 </html>

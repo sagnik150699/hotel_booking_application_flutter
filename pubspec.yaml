@@ -1,18 +1,25 @@
 name: hotel_booking_app
-description: A responsive Flutter sample for searching and comparing hotel stays.
+description: >-
+  A responsive Flutter hotel booking app for Android, iOS and web with search,
+  filters, a full reservation flow, saved stays and trips.
 publish_to: 'none'
-version: 1.0.0+1
+version: 2.0.0+2
 
 environment:
-  sdk: ">=2.17.0 <4.0.0"
+  sdk: ^3.10.0
+  flutter: '>=3.38.0'
 
 dependencies:
   flutter:
     sdk: flutter
 
 dev_dependencies:
+  flutter_lints: ^6.0.0
   flutter_test:
     sdk: flutter
 
 flutter:
   uses-material-design: true
+  assets:
+    - assets/images/hotels/
+    - assets/images/brand/
