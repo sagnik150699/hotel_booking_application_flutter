@@ -43,3 +43,24 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+
+# Secrets and signing material (never commit these)
+key.properties
+*.jks
+*.keystore
+*.p12
+*.mobileprovision
+.env
+.env.*
+/android/local.properties
+
+# Generated per machine by the Flutter tool
+**/ios/Flutter/ephemeral/
+**/macos/Flutter/ephemeral/
+
+# Test artefacts
+coverage/
+*.lcov
+
+# Node (image generator)
+node_modules/

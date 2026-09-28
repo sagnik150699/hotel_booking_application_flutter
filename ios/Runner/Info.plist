@@ -10,6 +10,8 @@
 	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
+	<key>CFBundleDisplayName</key>
+	<string>Hotel Booking</string>
 	<key>CFBundleName</key>
 	<string>Hotel Booking</string>
 	<key>CFBundlePackageType</key>
@@ -41,5 +43,18 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
+	<key>CADisableMinimumFrameDurationOnPhone</key>
+	<true/>
+	<key>UIApplicationSupportsIndirectInputEvents</key>
+	<true/>
+	<!-- The app only uses standard HTTPS/OS encryption, so it is exempt from export compliance prompts. -->
+	<key>ITSAppUsesNonExemptEncryption</key>
+	<false/>
+	<!-- App Transport Security stays at its strict default: no arbitrary loads, no cleartext. -->
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<false/>
+	</dict>
 </dict>
 </plist>
